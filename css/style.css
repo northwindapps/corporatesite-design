@@ -1,0 +1,226 @@
+body {
+  margin: 0px;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+}
+
+header {
+  width: auto;
+  height: 60vh;
+  /* background-image: url("https://unsplash.it/400"); */
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+header p {
+  margin: auto;
+  position: absolute;
+  top: 240px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: white;
+  font-size: 2em;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul>li {
+  min-width: 120px;
+  height: 20px;
+}
+
+.information {
+  border-bottom: 1px solid #c03;
+}
+
+.information ul {
+  list-style: none;
+}
+
+.information ul>li {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.information p {
+  margin: 0 17px 0 0;
+}
+
+nav {
+  --text: #f4f4f4;
+  --text-inverse: #333;
+  --background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 3em;
+  transition: background 250ms ease-in;
+  background: var(--background);
+  color: var(--text);
+}
+
+p {
+  text-align: center;
+}
+
+.section1, .section2, .section3 {
+  max-width: 60%;
+  /* max-height: 150px; */
+  height: 150px;
+  margin: 0 auto;
+}
+
+.information {
+  max-width: 60%;
+  min-height: 200px;
+  margin: 0 auto;
+}
+
+.section1 {
+  margin-top: 100px;
+}
+
+.section1, .section2, .section3 {
+  padding: 10px;
+  display: flex;
+  border: 1px solid lightgray;
+  margin-bottom: 100px;
+  background-color: white;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+
+.from-left {
+  /* grid-column: 2 / 3; */
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.from-right {
+  /* grid-column: 3 / 4; */
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+.from-left, .from-right {
+  transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in, -webkit-transform 400ms ease-in;
+  opacity: 0;
+}
+
+.from-left.appear, .from-right.appear {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.section1 img, .section2 img, .section3 img {
+  width: 50%;
+  /* max-height: 150px;
+   */
+  height: 150px;
+  object-fit: cover;
+}
+
+/* .section1 p,.section2 p,.section3 p {
+  width: 50%;
+} */
+
+.description {
+  width: 50%;
+}
+
+.description h3 {
+  text-align: center;
+}
+
+.description p {
+  overflow: hidden;
+  height: 70px;
+  margin: 10px;
+  font-size: .9em;
+}
+
+img.hero {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .2;
+}
+
+.content-start {
+  width: auto;
+  height: 60px;
+  background-image: url(./corporate-top.png ), linear-gradient(to bottom, #fff, #fff);
+  /* background-image: url(https://content.invisioncic.com/p289038/monthly_2020_02/Newman.thumb.jpg.7b9c63815001d8f440820ca6c2990f43.jpg); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-end {
+  width: auto;
+  height: 60px;
+  background-image: url(./corporate-bottom.png ), linear-gradient(to bottom, #fff, #fff);
+  /* background-image: url(https://content.invisioncic.com/p289038/monthly_2020_02/Newman.thumb.jpg.7b9c63815001d8f440820ca6c2990f43.jpg); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  width: auto;
+  height: 40px;
+  /* background-image: url(./corporate-background1.png ) ,linear-gradient(to bottom,#fff,#fff); */
+  /* background-image: url(https://content.invisioncic.com/p289038/monthly_2020_02/Newman.thumb.jpg.7b9c63815001d8f440820ca6c2990f43.jpg); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.information h3 {
+  margin: 60px 0 0px;
+  border-bottom: 1px solid #c03;
+  font-size: 158%;
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+.divider {
+  border-top: 1px dashed lightgray;
+  width: 100%;
+  padding-bottom: 25px;
+  margin: 0 auto;
+}
+
+.nav-scrolled nav{
+  background-color: black;
+}
