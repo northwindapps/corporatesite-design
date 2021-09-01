@@ -17,7 +17,7 @@ header p {
   position: absolute;
   top: 240px;
   left: 0;
-  bottom: 0;
+  /* bottom: 0; */
   right: 0;
   color: white;
   font-size: 2em;
@@ -144,8 +144,7 @@ p {
 
 .section1 img, .section2 img, .section3 img {
   width: 50%;
-  /* max-height: 150px;
-   */
+  cursor: pointer;
   height: 150px;
   object-fit: cover;
 }
@@ -179,7 +178,7 @@ img.hero {
 .content-start {
   width: auto;
   height: 60px;
-  background-image: url(./corporate-top.png ), linear-gradient(to bottom, #fff, #fff);
+  background-image: url(../corporate-top.png ), linear-gradient(to bottom, #fff, #fff);
   /* background-image: url(https://content.invisioncic.com/p289038/monthly_2020_02/Newman.thumb.jpg.7b9c63815001d8f440820ca6c2990f43.jpg); */
   background-position: center center;
   background-repeat: no-repeat;
@@ -189,7 +188,7 @@ img.hero {
 .content-end {
   width: auto;
   height: 60px;
-  background-image: url(./corporate-bottom.png ), linear-gradient(to bottom, #fff, #fff);
+  background-image: url(../corporate-bottom.png ), linear-gradient(to bottom, #fff, #fff);
   /* background-image: url(https://content.invisioncic.com/p289038/monthly_2020_02/Newman.thumb.jpg.7b9c63815001d8f440820ca6c2990f43.jpg); */
   background-position: center center;
   background-repeat: no-repeat;
@@ -223,4 +222,28 @@ footer {
 
 .nav-scrolled nav{
   background-color: black;
+}
+
+.section1.works,.section2.works,.section3.works{
+  height: auto;
+  border: none;
+}
+
+header.works{
+  height: 30vh;
+  
+}
+
+header.works p{
+  top: 150px;
+  
+}
+
+.works p{
+  height: auto;
+}
+
+img.works{
+  height: auto;
+  padding: 20px;
 }
